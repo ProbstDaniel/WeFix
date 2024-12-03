@@ -1,0 +1,142 @@
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f1eb;
+    animation: fadeIn 1.2s ease-in-out;
+    display: grid;
+    place-items: center;
+}
+header {
+    width: 100%;
+}
+.Header{
+    height: 115px;
+    background-color: #c8f080;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border: solid 2px black;
+
+}
+
+.Menu{
+    height: 80px;
+    width: 80px;
+
+}
+
+.logo {
+    width: 111.1px;
+    height: 110.3px;
+    float: left;
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+.DivMenu{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.ContainerGrande{
+    background-color: #c8f080;
+    padding: 10px 35px 30px 35px;
+    border-radius: 20px;
+    margin-top: 35px;
+    width: 85%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.Txts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Parte de cima / Cabeçalho da tabela */
+thead th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/*Faz com que altere as cores das linhas alternadas */
+/*nth que dizer qualquer numero ou "filho"*/
+tbody tr:nth-child(even) { /*todos os pares*/
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) { /*todos os ímpares*/
+    background-color: #f1f1f1;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Estilos da Barra de Navegação */
+.barra-navegacao {
+    background-color: #333;
+    border-bottom: solid 2px #c8f080;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.barra-navegacao ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.barra-navegacao ul li {
+    display: inline;
+}
+
+.barra-navegacao ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.barra-navegacao ul li a:hover {
+    color: #c8f080; /* Cor de destaque ao passar o mouse */
+}

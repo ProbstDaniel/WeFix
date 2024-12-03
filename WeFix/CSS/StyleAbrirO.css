@@ -1,0 +1,113 @@
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f1eb;
+    animation: fadeIn 1.2s ease-in-out;
+}
+header {
+    width: 100%;
+}
+.Header{
+    width: 100%;
+    height: 115px;
+    background-color: #c8f080;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border: solid 2px black;
+
+}
+
+.Menu{
+    height: 80px;
+    width: 80px;
+
+}
+
+.logo {
+    width: 111.1px;
+    height: 110.3px;
+    float: left;
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+.DivMenu{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.ContainerForm{
+    width: 100%;
+    align-items: center;
+    align-content: center; /*pra funcionar o align dos dois tipos precisa do display flex*/
+    /*display:grid e place-items: center são milagrosos */
+    display: grid;
+    place-items: center;
+
+}
+.FormVerde {
+    background-color: #c8f080;
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+.BotaoEnviar{
+    width:150px ;
+    height: 38px;
+    margin-left: 250px;
+    
+}
+.BotaoEnviar[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
